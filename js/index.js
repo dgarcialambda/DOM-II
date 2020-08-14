@@ -21,13 +21,10 @@ document.addEventListener('wheel', () => {
 console.log(newBody,'WHEEL');
 
 //KEYDOWN//
-const newBus = document.querySelector('h1');
+const newBus = document.querySelector('body');
 
-document.addEventListener ('keydown', () => {
-    newBus.style.color = '#3e4444';
-    newBus.style.border = '2px dashed black';
-    newBus.style.fontSize = '5.0rem';
-})
+newBus.addEventListener ('keyup', event => event.target.style.backgroundColor = 'hotpink'
+)
 console.log(newBus, 'KEYDOWN')
 
 //MOUSEOVER//
